@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="430" rx="20" fill="#f7f7f4"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  <g font-size="15" fill="#1c2321">
+    <!-- source -->
+    <rect x="30" y="160" width="170" height="110" rx="14" fill="#fff" stroke="#d6d3cb"/>
+    <text x="115" y="196" text-anchor="middle" font-weight="700" font-size="17">Source</text>
+    <text x="115" y="221" text-anchor="middle" fill="#68716d">file · rtsp / rtmp / hls</text>
+    <text x="115" y="243" text-anchor="middle" fill="#68716d">webcam + mic</text>
+    <!-- video lane -->
+    <text x="250" y="58" font-weight="700" fill="#7c3aed" font-size="13" letter-spacing="1.5">VIDEO</text>
+    <rect x="250" y="70" width="200" height="96" rx="14" fill="#fff" stroke="#c4b5fd"/>
+    <text x="350" y="104" text-anchor="middle" font-weight="700">Sampler</text>
+    <text x="350" y="128" text-anchor="middle" fill="#68716d" font-size="13">schedule · skip duplicates</text>
+    <text x="350" y="148" text-anchor="middle" fill="#68716d" font-size="13">boost after a hit</text>
+    <rect x="490" y="70" width="250" height="96" rx="14" fill="#fff" stroke="#c4b5fd"/>
+    <text x="615" y="104" text-anchor="middle" font-weight="700">Vision</text>
+    <text x="615" y="128" text-anchor="middle" fill="#68716d" font-size="13">NSFW ViT · NudeNet · CLIP</text>
+    <text x="615" y="148" text-anchor="middle" fill="#68716d" font-size="13">or a multimodal API</text>
+    <rect x="780" y="70" width="170" height="96" rx="14" fill="#fff" stroke="#c4b5fd"/>
+    <text x="865" y="104" text-anchor="middle" font-weight="700">Rules</text>
+    <text x="865" y="128" text-anchor="middle" fill="#68716d" font-size="13">fusion · sustained</text>
+    <text x="865" y="148" text-anchor="middle" fill="#68716d" font-size="13">signal · cooldown</text>
+    <!-- audio lane -->
+    <text x="250" y="254" font-weight="700" fill="#0f766e" font-size="13" letter-spacing="1.5">SPEECH</text>
+    <rect x="250" y="266" width="150" height="96" rx="14" fill="#fff" stroke="#99f6e4"/>
+    <text x="325" y="300" text-anchor="middle" font-weight="700">VAD</text>
+    <text x="325" y="324" text-anchor="middle" fill="#68716d" font-size="13">Silero · long</text>
+    <text x="325" y="344" text-anchor="middle" fill="#68716d" font-size="13">segments</text>
+    <rect x="430" y="266" width="170" height="96" rx="14" fill="#fff" stroke="#99f6e4"/>
+    <text x="515" y="300" text-anchor="middle" font-weight="700">Speech-to-text</text>
+    <text x="515" y="324" text-anchor="middle" fill="#68716d" font-size="13">faster-whisper</text>
+    <text x="515" y="344" text-anchor="middle" fill="#68716d" font-size="13">or any STT API</text>
+    <rect x="630" y="266" width="140" height="96" rx="14" fill="#fff" stroke="#99f6e4"/>
+    <text x="700" y="300" text-anchor="middle" font-weight="700">Clean-up</text>
+    <text x="700" y="324" text-anchor="middle" fill="#68716d" font-size="13">hallucinations</text>
+    <text x="700" y="344" text-anchor="middle" fill="#68716d" font-size="13">repeat loops</text>
+    <rect x="800" y="266" width="150" height="96" rx="14" fill="#fff" stroke="#99f6e4"/>
+    <text x="875" y="300" text-anchor="middle" font-weight="700">Text risk</text>
+    <text x="875" y="324" text-anchor="middle" fill="#68716d" font-size="13">LLM + context</text>
+    <text x="875" y="344" text-anchor="middle" fill="#68716d" font-size="13">local or API</text>
+    <!-- output -->
+    <rect x="990" y="150" width="180" height="130" rx="14" fill="#0f2f2b"/>
+    <text x="1080" y="186" text-anchor="middle" font-weight="700" fill="#f0fdfa" font-size="17">Findings</text>
+    <text x="1080" y="212" text-anchor="middle" fill="#99f6e4" font-size="13">flagged frames</text>
+    <text x="1080" y="232" text-anchor="middle" fill="#99f6e4" font-size="13">flagged lines</text>
+    <text x="1080" y="252" text-anchor="middle" fill="#99f6e4" font-size="13">JSON · HTML · stdout</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M200 195 C225 195 225 118 248 118"/>
+    <path d="M200 235 C225 235 225 314 248 314"/>
+    <path d="M450 118 H488"/><path d="M740 118 H778"/>
+    <path d="M400 314 H428"/><path d="M600 314 H628"/><path d="M770 314 H798"/>
+    <path d="M950 118 C975 118 965 190 988 190"/>
+    <path d="M950 314 C975 314 965 240 988 240"/>
+  </g>
+</svg>

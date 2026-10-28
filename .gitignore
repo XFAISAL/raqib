@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+# downloaded model weights and run outputs
+models/
+reports/
+*.onnx
+*.gguf
+.env
+raqib.local.yaml
+demo/
+

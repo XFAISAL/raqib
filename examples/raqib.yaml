@@ -1,0 +1,41 @@
+# Copy to ./raqib.yaml (or ~/.raqib/config.yaml) and edit. API keys come from environment variables only.
+
+min_confidence: 0.5
+# kinds: [nudity, sexual_act, weapon, harassment, threat]   # empty / missing = all
+
+vision:
+  backend: local            # local | provider | off
+  device: auto              # auto | cpu | cuda
+  # provider: { kind: openai, base_url: https://api.openai.com/v1, model: gpt-4o-mini, api_key_env: OPENAI_API_KEY }
+
+sampling:
+  initial_interval: 2       # seconds between analysed frames for the first minute
+  interval: 5               # afterwards
+  boost_interval: 2         # after a finding, for boost_window seconds
+  dedup_threshold: 0.035    # skip near-identical frames
+
+stt:
+  backend: local            # local (faster-whisper) | provider | off
+  model: small              # tiny | base | small | medium | large-v3 | turbo
+  languages: [ar, en]
+  # provider: { kind: openai, base_url: https://api.groq.com/openai/v1, model: whisper-large-v3, api_key_env: GROQ_API_KEY }
+
+text:
+  backend: local            # local | provider | off
+  local:                    # any OpenAI-compatible server on your machine
+    base_url: http://127.0.0.1:8080/v1     # llama.cpp llama-server
+    # base_url: http://127.0.0.1:11434/v1  # Ollama
+    model: local
+    api_key_env: ""
+  provider:
+    kind: openai            # openai (any OpenAI-compatible API) | anthropic
+    base_url: https://api.openai.com/v1
+    model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+    # kind: anthropic, base_url: https://api.anthropic.com, model: claude-haiku-5-5, api_key_env: ANTHROPIC_API_KEY
+
+output:
+  dir: reports
+  save_frames: true         # keep flagged frames
+  blur_frames: true         # blurred in the HTML report (click to reveal)
+  save_audio: false         # keep flagged speech clips as WAV

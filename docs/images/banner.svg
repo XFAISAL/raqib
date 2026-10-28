@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f1d"/><stop offset="1" stop-color="#11302c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.28"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="28" fill="url(#glow)"/>
+  <!-- eye mark -->
+  <g transform="translate(110 180)">
+    <path d="M-62 0 C-36 -44 36 -44 62 0 C36 44 -36 44 -62 0 Z" fill="none" stroke="#2dd4bf" stroke-width="7" stroke-linejoin="round"/>
+    <circle r="22" fill="#2dd4bf"/>
+    <circle r="9" fill="#0b1f1d"/>
+    <path d="M-80 -58 v-14 h14 M80 -58 v-14 h-14 M-80 58 v14 h14 M80 58 v14 h-14" fill="none" stroke="#99f6e4" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="230" y="168" fill="#f0fdfa" font-size="84" font-weight="800" letter-spacing="-2">Raqib</text>
+  <text x="492" y="166" fill="#5eead4" font-size="60" font-weight="700">رقيب</text>
+  <text x="232" y="222" fill="#a7c4be" font-size="26">Audio &amp; video moderation for calls, streams and recordings.</text>
+  <text x="232" y="262" fill="#a7c4be" font-size="26">Flags harmful frames and speech: local models or any AI provider.</text>
+  <g font-size="17" font-weight="600">
+    <rect x="232" y="292" width="170" height="34" rx="17" fill="#134e4a"/><text x="317.0" y="315" fill="#ccfbf1" text-anchor="middle">100% local mode</text>
+    <rect x="414" y="292" width="180" height="34" rx="17" fill="#134e4a"/><text x="504.0" y="315" fill="#ccfbf1" text-anchor="middle">Arabic + English</text>
+    <rect x="606" y="292" width="238" height="34" rx="17" fill="#134e4a"/><text x="725.0" y="315" fill="#ccfbf1" text-anchor="middle">files · streams · webcams</text>
+    <rect x="856" y="292" width="260" height="34" rx="17" fill="#134e4a"/><text x="986.0" y="315" fill="#ccfbf1" text-anchor="middle">OpenAI · Anthropic · any API</text>
+  </g>
+</svg>
