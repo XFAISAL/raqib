@@ -46,7 +46,7 @@ staged pistol, the insult + threat, the fake "bank" asking for an SMS code and t
 ## Quick start
 
 ```bash
-git clone https://github.com/<you>/raqib && cd raqib
+git clone https://github.com/XFAISAL/raqib && cd raqib
 python -m venv .venv && source .venv/bin/activate
 pip install -e .                 # add [gpu] for CUDA: pip install -e ".[gpu]"
 
